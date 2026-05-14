@@ -1,0 +1,30 @@
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv, find_dotenv
+
+# Load environment variables from .env file (automatically finds it in parent directories)
+load_dotenv(find_dotenv())
+
+# BUG FIX 1: title was "Survivor Network API" (old codelab name).
+#            Updated to "Eurythmy Community API".
+app = FastAPI(title="Eurythmy Community API")
+
+# CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # In production, replace with specific origins
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.get("/health")
+async def health_check():
+    return {"status": "ok"}
+
+
+from api.routes import graph, chat, upload
+app.include_router(graph.router)
+app.include_router(chat.router,   prefix="/api/chat",   tags=["chat"])
+app.include_router(upload.router, prefix="/api/upload", tags=["upload"])
+
