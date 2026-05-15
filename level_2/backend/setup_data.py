@@ -19,7 +19,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configuration - load from environment variables with defaults
-INSTANCE_ID = os.getenv("INSTANCE_ID", "eurythmy -community")
+INSTANCE_ID = os.getenv("INSTANCE_ID", "survivor-network")
 DATABASE_ID = os.getenv("DATABASE_ID", "eurythmy-db")
 GRAPH_NAME = os.getenv("GRAPH_NAME", "EurythmyGraph")
 PROJECT_ID = os.getenv("PROJECT_ID", None)
@@ -227,14 +227,14 @@ def insert_data(database):
             "Materials",
             columns=["material_id", "name", "type", "icon", "venue", "description"],
             values=[
-                ("material_amber", "Amber Fuel", "power", "A", "FOSSILIZED", None),
-                ("material_fresh_water", "Fresh Water", "water", "W", "CRYO", None),
-                ("material_fungi", "Fungi", "tool", "F", "BIOLUMINESCENT", None),
-                ("material_geothermal", "Geothermal Power", "power", "G", "VOLCANIC", None),
-                ("material_hot_springs", "Hot Springs", "shelter", "H", "VOLCANIC", None),
-                ("material_ice_cave", "Ice Cave", "shelter", "I", "CRYO", None),
-                ("material_medicinal_plants", "Medicinal Plants", "medical", "M", "BIOLUMINESCENT", None),
-                ("material_salvaged_tools", "Salvaged Tools", "tool", "T", "FOSSILIZED", None),
+                ("material_scores_intro", "Introduction to Eurythmy Scores", "score", "🎼", "Elmfield Steiner School", "Foundational eurythmy movement scores used for student learning and practice."),
+                ("material_speech_recordings", "Speech Eurythmy Recordings", "recording", "🎤", "The Christian Community, Stourbridge", "Audio recordings for speech and sacramental eurythmy exercises."),
+                ("material_therapy_guides", "Therapeutic Movement Guides", "score", "📘", "Elysia Therapeutic Centre", "Curative eurythmy guidance materials for therapeutic sessions."),
+                ("material_stage_music", "Stage Performance Music", "recording", "🎵", "Glasshouse Arts Centre", "Performance music and rehearsal recordings for stage productions."),
+                ("material_instruments_basic", "Basic Rhythm Instruments", "instrument", "🥁", "EthyOn Cafe", "Community instruments used for rhythm and movement workshops."),
+                ("material_eurythmy_rods", "Eurythmy Copper Rods", "instrument", "🪄", "Elmfield Steiner School", "Traditional copper rods used in movement alignment exercises."),
+                ("material_choral_recordings", "Choral Practice Recordings", "recording", "🎶", "Glasshouse Arts Centre", "Group vocal and movement synchronization recordings."),
+                ("material_learning_manuals", "Eurythmy Learning Manuals", "score", "📚", "EthyOn Cafe", "Printed and digital manuals for introductory community sessions."),
             ]
         )
         
@@ -349,17 +349,17 @@ def insert_data(database):
             "PractitionerFoundMaterial",
             columns=["practitioner_id", "material_id", "found_at"],
             values=[
-        ("P001", "material_salvaged_tools", found_timestamp),     # Tomie Ando-Boadman
-        ("P002", "material_fresh_water", found_timestamp),        # Marie-Reine
-        ("P003", "material_medicinal_plants", found_timestamp),   # Ursula Werner
-        ("P003", "material_hot_springs", found_timestamp),        # Ursula Werner
-        ("P004", "material_fungi", found_timestamp),              # Eurythmy West Midlands Stage Group
-        ("P011", "material_amber", found_timestamp),              # Carl Higgs
-        ("P012", "material_ice_cave", found_timestamp),           # Dr Judyth Sassoon
-        ("P017", "material_geothermal", found_timestamp),         # Setsu Adachi
+        ("P001", "material_scores_intro", found_timestamp),         # Tomie Ando-Boadman
+        ("P002", "material_speech_recordings", found_timestamp),   # Marie-Reine
+        ("P003", "material_therapy_guides", found_timestamp),      # Ursula Werner
+        ("P003", "material_learning_manuals", found_timestamp),    # Ursula Werner
+        ("P004", "material_stage_music", found_timestamp),         # Eurythmy West Midlands Stage Group
+        ("P011", "material_eurythmy_rods", found_timestamp),       # Carl Higgs
+        ("P012", "material_choral_recordings", found_timestamp),   # Dr Judyth Sassoon
+        ("P017", "material_instruments_basic", found_timestamp),   # Setsu Adachi
     ]
         )
-        
+
         # PractitionerAtVenue
         transaction.insert(
             "PractitionerAtVenue",
