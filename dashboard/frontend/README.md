@@ -1,6 +1,6 @@
-# Way Back Home - Frontend
+# Eurythmy Community Multimodal - Frontend
 
-![Way Back Home - World Map](public/website-preview.png)
+![Eurythmy-Community-Multimodal - World Map](public/Picture4.png)
 
 **A beautiful 3D interactive map experience built with Next.js 14 and Three.js.**
 
