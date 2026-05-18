@@ -1,10 +1,10 @@
-# 🚀 Way Back Home
+# 🚀 Eurythmy Community
 
-![Way Back Home](dashboard/frontend/public/prelude.png)
+![Eurythmy Community](dashboard/frontend/public/prelude.png)
 
 **An immersive AI workshop platform where participants learn to build intelligent agents while rescuing a stranded space explorer.**
 
-Way Back Home is a hands-on workshop experience that teaches Google Cloud AI technologies through an engaging narrative. Participants crash-land on an alien planet and must use AI to identify themselves, analyze their surroundings, and coordinate rescue efforts.
+Eurythmy Community is a hands-on workshop experience that teaches Google Cloud AI technologies through an engaging narrative. Participants crash-land on an alien planet and must use AI to identify themselves, analyze their surroundings, and coordinate rescue efforts.
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-waybackhome.dev-blue?style=for-the-badge)](https://waybackhome.dev)
 [![Codelab](https://img.shields.io/badge/Codelab-Level%200-green?style=for-the-badge)](https://codelabs.developers.google.com/eurythmy-level-0/instructions)
@@ -73,7 +73,7 @@ See [Deployment Guide](#-deployment) below for running your own instance.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                           Way Back Home                                  │
+│                           Eurythmy Community                                  │
 ├─────────────────────────────────────────────────────────────────────────┤
 │                                                                          │
 │   Participant Journey                                                    │
@@ -204,4 +204,4 @@ Apache 2.0 - See [LICENSE](LICENSE) for details.
 
 ---
 
-**Ready to find your way back home?** Start with [Level 0](level_0/README.md) 🚀
+**Ready to find your Eurythmy Community?** Start with [Level 0](level_0/README.md) 🚀
