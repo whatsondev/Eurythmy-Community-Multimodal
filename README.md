@@ -1,6 +1,6 @@
 # 🚀 Eurythmy Community
 
-![Eurythmy Community](dashboard/frontend/public/prelude.png)
+![Eurythmy Community](dashboard/frontend/public/picture1.png)
 
 **An immersive AI workshop platform where participants learn to build intelligent agents while rescuing a stranded space explorer.**
 
