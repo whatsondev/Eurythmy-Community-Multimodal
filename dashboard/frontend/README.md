@@ -211,4 +211,3 @@ Apache 2.0 - See [LICENSE](../../LICENSE) file in the repository root.
 
 ---
 
-*Watch the explorers find their way home.* 🌍
