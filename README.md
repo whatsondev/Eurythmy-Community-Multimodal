@@ -6,7 +6,6 @@
 
 Eurythmy Community is a hands-on workshop experience that teaches Google Cloud AI technologies through an engaging narrative. Participants crash-land on an alien planet and must use AI to identify themselves, analyze their surroundings, and coordinate rescue efforts.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-waybackhome.dev-blue?style=for-the-badge)](https://waybackhome.dev)
 [![Codelab](https://img.shields.io/badge/Codelab-Level%200-green?style=for-the-badge)](https://codelabs.developers.google.com/eurythmy-level-0/instructions)
 [![Codelab](https://img.shields.io/badge/Codelab-Level%31-orange?style=for-the-badge)](https://codelabs.developers.google.com/eurythmy-level-1/instructions)
 [![Codelab](https://img.shields.io/badge/Codelab-Level%202-green?style=for-the-badge)](x)
